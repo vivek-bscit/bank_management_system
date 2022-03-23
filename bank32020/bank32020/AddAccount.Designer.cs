@@ -50,11 +50,11 @@
             this.CancelBtn = new System.Windows.Forms.Button();
             this.SubmitBtn = new System.Windows.Forms.Button();
             this.AccountDGV = new System.Windows.Forms.DataGridView();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.close_Icon = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccountDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_Icon)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -280,16 +280,16 @@
             this.AccountDGV.UseWaitCursor = true;
             this.AccountDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccountDGV_CellContentClick);
             // 
-            // pictureBox1
+            // close_Icon
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1422, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(38, 33);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 43;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            this.close_Icon.Image = ((System.Drawing.Image)(resources.GetObject("close_Icon.Image")));
+            this.close_Icon.Location = new System.Drawing.Point(1422, 0);
+            this.close_Icon.Name = "close_Icon";
+            this.close_Icon.Size = new System.Drawing.Size(38, 33);
+            this.close_Icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.close_Icon.TabIndex = 43;
+            this.close_Icon.TabStop = false;
+            this.close_Icon.Click += new System.EventHandler(this.close_Icon_Click);
             // 
             // AddAccount
             // 
@@ -297,7 +297,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.ClientSize = new System.Drawing.Size(1457, 818);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.close_Icon);
             this.Controls.Add(this.AccountDGV);
             this.Controls.Add(this.SubmitBtn);
             this.Controls.Add(this.CancelBtn);
@@ -326,7 +326,7 @@
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccountDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.close_Icon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -355,7 +355,7 @@
         private Button CancelBtn;
         private Button SubmitBtn;
         private DataGridView AccountDGV;
-        private PictureBox pictureBox1;
+        private PictureBox close_Icon;
         private EventHandler cancelBtn_Click;
 
         public EventHandler label5_Click { get; private set; }

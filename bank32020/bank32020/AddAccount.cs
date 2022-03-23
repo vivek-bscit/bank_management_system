@@ -161,7 +161,7 @@ namespace bank32020
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void close_Icon_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
